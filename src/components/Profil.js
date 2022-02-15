@@ -9,7 +9,7 @@ function Profil(props) {
   return (
     <div className="fixed left-0 top-0 w-80">
       <div className="me h-screen w-full p-3 col-span-3 flex flex-col text-gray-200 bg-slate-800">
-        {props.isLoading && props.isLoading ? (
+        {props.login && props.isLoading && props.isLoading ? (
           <img src={loading} alt="loading..." />
         ) : props.login ? (
           <div className="profil w-full h-full flex flex-col items-center justify-between">
