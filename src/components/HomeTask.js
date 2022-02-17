@@ -220,7 +220,7 @@ function HomeTask(props) {
           >
             <MenuItem
               onClick={() => {
-                if (props.lists[0]) {
+                if (props.secili_lists.id === props.lists[0].id) {
                   error("İlk listeyi silemezsin.");
                 } else if (props.lists.length === 1) {
                   error("En az 1 listen olmak zorunda.");

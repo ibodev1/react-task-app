@@ -21,8 +21,8 @@ function Home(props) {
             <h1 className="text-4xl font-bold">
               Google hesanbınızla giriş yapın.
             </h1>
-            <p className="text-xl font-medium my-3">Yapabilececkleriniz;</p>
-            <ul className="list-disc">
+            <p className="text-xl font-medium my-3">Yapabilecekleriniz;</p>
+            <ul className="list-disc pl-5">
               <li>Yeni liste oluşturun.</li>
               <li>Yeni görev oluşturun.</li>
               <li>Yeni görevinize aytıntı ekleyin.</li>
