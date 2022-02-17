@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import HomeLists from "./HomeLists";
 import HomeTask from "./HomeTask";
 import LoginButton from "./LoginButton";
+import Ticked from "../img/ticked.png";
+import NoTicked from "../img/no_ticked.png";
 
 function Home(props) {
   return (
@@ -13,21 +15,29 @@ function Home(props) {
           <HomeTask />
         </div>
       ) : (
-        <div className="w-full h-screen overflow-hidden p-20 text-gray-800">
-          <h1 className="text-4xl font-bold">
-            Google hesanbınızla giriş yapın.
-          </h1>
-          <p className="text-xl font-medium my-3">Yapabilececkleriniz;</p>
-          <ul className="list-disc">
-            <li>Yeni liste oluşturun.</li>
-            <li>Yeni görev oluşturun.</li>
-            <li>Yeni görevinize aytıntı ekleyin.</li>
-            <li>Yeni görevinize tarih ekleyin.</li>
-            <li>Listelerinizi yönetin.</li>
-            <li>Görevlerinizi yönetin.</li>
-          </ul>
-
-          <LoginButton />
+        <div className="w-full h-screen flex overflow-hidden p-20 text-gray-800">
+          <div className="flex-1">
+            {" "}
+            <h1 className="text-4xl font-bold">
+              Google hesanbınızla giriş yapın.
+            </h1>
+            <p className="text-xl font-medium my-3">Yapabilececkleriniz;</p>
+            <ul className="list-disc">
+              <li>Yeni liste oluşturun.</li>
+              <li>Yeni görev oluşturun.</li>
+              <li>Yeni görevinize aytıntı ekleyin.</li>
+              <li>Yeni görevinize tarih ekleyin.</li>
+              <li>Listelerinizi yönetin.</li>
+              <li>Görevlerinizi yönetin.</li>
+            </ul>
+            <LoginButton />
+          </div>
+          <div className="flex-1">
+            <p>Google hesabınızla giriş yaparken izin ekranındaki bu bölümü;</p>
+            <img src={NoTicked} alt="permission" />
+            <p>Aşağıdaki hale getirin.</p>
+            <img src={Ticked} alt="permission" />
+          </div>
         </div>
       )}
     </div>
