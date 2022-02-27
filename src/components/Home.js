@@ -5,6 +5,7 @@ import HomeTask from "./HomeTask";
 import LoginButton from "./LoginButton";
 import Ticked from "../img/ticked.png";
 import NoTicked from "../img/no_ticked.png";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
@@ -32,11 +33,24 @@ function Home(props) {
             </ul>
             <LoginButton />
           </div>
-          <div className="flex-1">
-            <p>Google hesabınızla giriş yaparken izin ekranındaki bu bölümü;</p>
-            <img src={NoTicked} alt="permission" />
-            <p>Aşağıdaki hale getirin.</p>
-            <img src={Ticked} alt="permission" />
+          <div className="flex-1 flex flex-col items-center justify-start">
+            <div>
+              <p>
+                Google hesabınızla giriş yaparken izin ekranındaki bu bölümü;
+              </p>
+              <img src={NoTicked} alt="permission" />
+              <p>Aşağıdaki hale getirin.</p>
+              <img src={Ticked} alt="permission" />
+            </div>
+            <div className="m-16">
+              <Link className="text-indigo-500" to="/service">
+                Service
+              </Link>{" "}
+              |{" "}
+              <Link className="text-indigo-500" to="/privacy">
+                Privacy
+              </Link>
+            </div>
           </div>
         </div>
       )}

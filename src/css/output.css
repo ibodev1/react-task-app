@@ -466,6 +466,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -538,6 +572,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 3 / span 3;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -571,6 +613,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mr-3 {
@@ -960,6 +1012,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1013,6 +1069,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2.5rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1035,10 +1095,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-0 {
   padding-top: 0px;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .text-xl {
